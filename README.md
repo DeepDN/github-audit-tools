@@ -14,13 +14,13 @@ This is a tool for auditing github organizations including their repos, users, a
 Please note that you'll need your github org name and to create a github token with access to all repo, team, and user info.
 
 ```sh
-$ git clone https://github.com/EISMGard/github-audit-tool
-$ cd github-audit-tool
+$ git clone https://github.com/DeepDN/github-audit-tools.git
+$ cd github-audit-tools
 $ virtualenv -p python3 venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
-$ export GITHUB_ORG_NAME=<your github org name>
-$ export  GITHUB_TOKEN=<your github token>
+$ export GITHUB_ORG_NAME=<your github org name>   # Organization name from github account
+$ export  GITHUB_TOKEN=<your github token>     # Github access token of your account
 $ python github-reporting-tool.py
 ```
 
