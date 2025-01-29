@@ -16,97 +16,103 @@ Please note that you'll need your github org name and to create a github token w
 ```sh
 $ git clone https://github.com/DeepDN/github-audit-tools.git
 $ cd github-audit-tools
+$ sudo apt install python3-virtualenv  # Run this command if python3-virtualenv is not installed on your system.
 $ virtualenv -p python3 venv
 $ source venv/bin/activate
+$ sudo apt update && sudo apt install build-essential libffi-dev python3-dev 
 $ pip install -r requirements.txt
 $ export GITHUB_ORG_NAME=<your github org name>   # Organization name from github account
 $ export  GITHUB_TOKEN=<your github token>     # Github access token of your account
 $ python github-reporting-tool.py
+
+OPTIONAL
+$ python github-reporting-tool.py > output.txt  # If you want to save output in external file then run this command
+
 ```
 
 ## Example Output
 ```
 Repo List:
-   git://github.com/EISMGard/UnstoppableDevOps.git
-   git://github.com/EISMGard/onetwotest.git
-   git://github.com/EISMGard/laughing-pancake.git
-   git://github.com/EISMGard/potential-octo-computing-machine.git
-   git://github.com/EISMGard/literate-octo-system.git
-   git://github.com/EISMGard/github-audit-tool.git
-   git://github.com/EISMGard/test.git
-   git://github.com/EISMGard/foo.git
-   git://github.com/EISMGard/bar.git
-   git://github.com/EISMGard/baz.git
+   git://github.com/DeepDN/Devops.git
+   git://github.com/DeepDN/onetwotest.git
+   git://github.com/DeepDN/laughing-pancake.git
+   git://github.com/DeepDN/potential-octo-computing-machine.git
+   git://github.com/DeepDN/literate-octo-system.git
+   git://github.com/DeepDN/github-audit-tool.git
+   git://github.com/DeepDN/test.git
+   git://github.com/DeepDN/foo.git
+   git://github.com/DeepDN/bar.git
+   git://github.com/DeepDN/baz.git
 
 Team List:
     a-team
-      git://github.com/EISMGard/test.git
+      git://github.com/DeepDN/test.git
     b-team
-      git://github.com/EISMGard/onetwotest.git
-      git://github.com/EISMGard/UnstoppableDevOps.git
+      git://github.com/DeepDN/onetwotest.git
+      git://github.com/DeepDN/UnstoppableDevOps.git
     bar team
-      git://github.com/EISMGard/laughing-pancake.git
+      git://github.com/DeepDN/laughing-pancake.git
     foo team
-      git://github.com/EISMGard/literate-octo-system.git
+      git://github.com/DeepDN/literate-octo-system.git
     gorakTeam
-      git://github.com/EISMGard/onetwotest.git
+      git://github.com/DeepDN/onetwotest.git
 
 Team Membership List:
    a-team  Team Members:
        bfrancom
-       jesse-eismgard
+       jesse-DeepDN
    b-team  Team Members:
        bfrancom
-       jesse-eismgard
+       jesse-DeepDN
    bar team  Team Members:
        bfrancom
-       jesse-eismgard
+       jesse-DeepDN
    foo team  Team Members:
        bfrancom
-       jane-at-eismgard
+       jane-at-DeepDN
    gorakTeam  Team Members:
        bfrancom
-       jane-at-eismgard
+       jane-at-DeepDN
        
 Direct Repo Rights:
-   git://github.com/EISMGard/UnstoppableDevOps.git
+   git://github.com/DeepDN/UnstoppableDevOps.git
        bfrancom
-       jesse-eismgard
-       jane-at-eismgard
-   git://github.com/EISMGard/onetwotest.git
+       jesse-DeepDN
+       jane-at-DeepDN
+   git://github.com/DeepDN/onetwotest.git
        bfrancom
-       jesse-eismgard
-       jane-at-eismgard
-   git://github.com/EISMGard/laughing-pancake.git
+       jesse-DeepDN
+       jane-at-DeepDN
+   git://github.com/DeepDN/laughing-pancake.git
        bfrancom
-       jesse-eismgard
-       jane-at-eismgard
-   git://github.com/EISMGard/potential-octo-computing-machine.git
+       jesse-DeepDN
+       jane-at-DeepDN
+   git://github.com/DeepDN/potential-octo-computing-machine.git
        bfrancom
-       jesse-eismgard
-       jane-at-eismgard
-   git://github.com/EISMGard/literate-octo-system.git
+       jesse-DeepDN
+       jane-at-DeepDN
+   git://github.com/DeepDN/literate-octo-system.git
        bfrancom
-       jesse-eismgard
-       jane-at-eismgard
-   git://github.com/EISMGard/github-audit-tool.git
+       jesse-DeepDN
+       jane-at-DeepDN
+   git://github.com/DeepDN/github-audit-tool.git
        bfrancom
-       jesse-eismgard
-       jane-at-eismgard
-   git://github.com/EISMGard/test.git
+       jesse-DeepDN
+       jane-at-DeepDN
+   git://github.com/DeepDN/test.git
        bfrancom
-       jesse-eismgard
-       jane-at-eismgard
-   git://github.com/EISMGard/foo.git
+       jesse-DeepDN
+       jane-at-DeepDN
+   git://github.com/DeepDN/foo.git
        bfrancom
-       jesse-eismgard
-       jane-at-eismgard
-   git://github.com/EISMGard/bar.git
+       jesse-DeepDN
+       jane-at-DeepDN
+   git://github.com/DeepDN/bar.git
        bfrancom
-       jesse-eismgard
-       jane-at-eismgard
-   git://github.com/EISMGard/baz.git
+       jesse-DeepDN
+       jane-at-DeepDN
+   git://github.com/DeepDN/baz.git
        bfrancom
-       jesse-eismgard
-       jane-at-eismgard
+       jesse-DeepDN
+       jane-at-DeepDN
 ```
